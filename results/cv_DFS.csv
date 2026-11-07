@@ -1,0 +1,14 @@
+model,cindex_mean,cindex_sd
+NND (Cox PH),0.5525,0.0773
+Ripley (Cox PH),0.5246,0.0484
+NND + Ripley (Cox PH),0.5466,0.0558
+Clinical (Cox PH),0.6870,0.0427
+Clinical + NND (Cox PH),0.6952,0.0505
+Clinical + Ripley (Cox PH),0.6944,0.0558
+Clinical + NND + Ripley (Cox PH),0.7014,0.0598
+GNN: no_pretrain,0.7253,0.0376
+GNN: pretrain_finetune,0.7222,0.0296
+GNN: pretrain_frozen,0.7185,0.0365
+GNN: gnn_only,0.5886,0.0325
+GNN: gnn_only_finetune,0.5734,0.0260
+GNN: gnn_only_frozen,0.5663,0.0365

@@ -1,0 +1,25 @@
+# Python / environment
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# Data (regenerate with data/ and synthetic/ scripts, see README)
+datasets/
+*.parquet
+data/raw/
+
+# Experiment tracking and run outputs
+mlflow.db
+mlruns/
+results/*.log
+results/tmp/
+
+# Generated figures
+figures/output/
+
+# Ad-hoc checkpoints (the ones used in the thesis are tracked explicitly)
+*.pt
+!best_model.pt
+!pretrained_metacluster_nocap.pt
+!models/synthetic_regime[1-4]_noise0.0.pt

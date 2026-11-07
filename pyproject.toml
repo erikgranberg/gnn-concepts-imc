@@ -1,0 +1,25 @@
+[project]
+name = "interpretable-point-patterns"
+version = "0.1.0"
+description = "Interpretable GNN survival models for spatial point patterns in breast cancer IMC data"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "lifelines>=0.30.0",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.0",
+    "pandas>=2.3.3",
+    "pyarrow>=22.0.0",
+    "scikit-image>=0.26.0",
+    "scikit-learn>=1.6.0",
+    "scipy>=1.16.3",
+    "torch>=2.9.1",
+    "torch_geometric>=2.6.0",
+    "torch-cluster>=1.6.0",
+    "mlflow>=2.0.0",
+    "umap-learn>=0.5.12",
+]
+
+[tool.uv.extra-build-dependencies]
+torch-cluster = ["torch"]
